@@ -3,7 +3,7 @@ from die import Die
 
 # 创建一个 D6
 die1 = Die()
-die2 = Die()
+die2 = Die(10)
 
 # 投掷几次骰子并将结果存储在列表当中
 results = []
@@ -22,7 +22,8 @@ for value in range(2, max_result + 1):
 # 对结果进行可视化
 hist = pygal.Bar()
 hist.title = "Results of rolling two D6 1000 times."
-hist.x_labels = ['1', '2', '3', '4', '5', '6']
+hist.x_labels = ['2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12',
+                 '13', '14', '15', '16']
 hist.x_title = "Result"
 hist.y_title = "Frequency of Result"
 
